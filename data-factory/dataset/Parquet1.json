@@ -1,0 +1,49 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBloblinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "files"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "dispatching_base_num",
+				"type": "UTF8"
+			},
+			{
+				"name": "pickup_datetime",
+				"type": "TIMESTAMP_MICROS"
+			},
+			{
+				"name": "dropOff_datetime",
+				"type": "TIMESTAMP_MICROS"
+			},
+			{
+				"name": "PUlocationID",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "DOlocationID",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "SR_Flag",
+				"type": "INT32"
+			},
+			{
+				"name": "Affiliated_base_number",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

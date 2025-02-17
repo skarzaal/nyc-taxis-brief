@@ -1,0 +1,58 @@
+{
+	"name": "Parquet2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBloblinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				},
+				"container": "files"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "dispatching_base_num",
+				"type": "UTF8"
+			},
+			{
+				"name": "pickup_datetime",
+				"type": "TIMESTAMP_MICROS"
+			},
+			{
+				"name": "dropOff_datetime",
+				"type": "TIMESTAMP_MICROS"
+			},
+			{
+				"name": "PUlocationID",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "DOlocationID",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "SR_Flag",
+				"type": "INT32"
+			},
+			{
+				"name": "Affiliated_base_number",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
