@@ -1,9 +1,0 @@
-{
-	"name": "adf-brief",
-	"location": "eastus",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "a4e64d9f-e187-4116-adeb-2f9fbd0c4783",
-		"tenantId": "a2e466aa-4f86-4545-b5b8-97da7c8febf3"
-	}
-}
