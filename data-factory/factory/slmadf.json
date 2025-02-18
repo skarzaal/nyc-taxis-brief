@@ -1,0 +1,9 @@
+{
+	"name": "slmadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6e84c457-e305-4593-a800-d8de44058d82",
+		"tenantId": "a2e466aa-4f86-4545-b5b8-97da7c8febf3"
+	}
+}
